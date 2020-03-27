@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoffeeShop.Views.MenuCoffee">
+    <ContentPage.Content>
+<ScrollView>
+            <Grid BackgroundColor="#F6D2B7" >
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <StackLayout>
+
+            <Label Text="Menu" 
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   Margin="16" FontSize="Title"/>
+
+                <Image Source="Cappuccino" HeightRequest="150" Margin="0,0,0,0" HorizontalOptions="Center"/>
+                <Label Text="คาปูชิโน่" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Label Text="ราคา 40 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Button Text="สั่งซื้อ" x:Name="buycup" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buycup_Clicked" />
+                
+                <Image Source="T5" HeightRequest="150" Margin="0,0,0,0"/>
+                <Label Text="เครปเค้ก" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Label Text="ราคา 70 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Button Text="สั่งซื้อ" x:Name="buycrepe" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buycrepe_Clicked" />
+                
+                <Image Source="Teagreen" HeightRequest="150" Margin="0,0,0,0"/>
+                <Label Text="ชาเขียวปั่น" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Label Text="ราคา 50 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Button Text="สั่งซื้อ" x:Name="buygreen" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buygreen_Clicked" />
+                
+                <Image Source="Mocha" HeightRequest="150" Margin="0,0,0,0"/>
+                <Label Text="มอคค่าร้อน" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Label Text="ราคา 40 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Button Text="สั่งซื้อ" x:Name="buymocha" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buymocha_Clicked" />
+                
+                <Image Source="Colast" HeightRequest="150" Margin="0,0,0,0"/>
+                <Label Text="เค้กช็อคโกแลต" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Label Text="ราคา 70 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                <Button Text="สั่งซื้อ" x:Name="buycakecoco" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buycakecoco_Clicked" />
+
+                    <Image Source="milk" HeightRequest="150" Margin="0,0,0,0"/>
+                    <Label Text="นมสดปั่น" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                    <Label Text="ราคา 50 บาท" HorizontalTextAlignment="Center" Margin="0,5,0,0" TextColor="#000000" />
+                    <Button Text="สั่งซื้อ" x:Name="buymilkk" BackgroundColor="#26E7CC" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="Center" Clicked="buymilkk_Clicked" />
+                </StackLayout>
+    </Grid>
+</ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoffeeShop.Views.LoginPage">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="#F6D2B7" >
+                <Grid.RowDefinitions>
+            
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+            <Grid HorizontalOptions="Center" >
+                <Image Grid.Row="1" Source="breakfast" Margin="0,90,0,-120"/>
+            </Grid>
+            
+            <StackLayout Grid.Row="2">
+                <Label Text="Coffee Shop"  HorizontalTextAlignment="Center" Margin="0,130,0,-50" TextType="Text" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold" />
+                <Label Text="Username:" x:Name="Userlabel" FontSize="Large" FontAttributes="Bold" Margin="20,60,30,0" />
+                <Entry x:Name="Username" Placeholder="Username" Keyboard="Email" Margin="20,0,0,0" FontSize="Large" TextColor="#FFFFFF" PlaceholderColor="#050505"  />
+                <Label Text="Password:" x:Name="Passlabel" FontSize="Large" FontAttributes="Bold" Margin="20,0,30,60" />
+                <Entry x:Name="Password" Placeholder="Password" IsPassword="true" Margin="20,-50,0,-5" FontSize="Large" PlaceholderColor="#000000" TextColor="#FFFFFF" />
+                <Button Text="Log in" x:Name="Loginbutton" BackgroundColor="#32F012" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                              FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="50,50,50,0" 
+                              Clicked="Loginbutton_Clicked"/>
+                <Button Text="Sing up" x:Name="Singupbutton" BackgroundColor="#F83815" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                              FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="50,50,50,0" 
+                              Clicked="Singupbutton_Clicked"/>
+                
+            </StackLayout>
+        </Grid>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,9 @@
+E:\source\repos\CoffeeShopW\CoffeeShopW\bin\Debug\CoffeeShopW.exe.config
+E:\source\repos\CoffeeShopW\CoffeeShopW\bin\Debug\CoffeeShopW.exe
+E:\source\repos\CoffeeShopW\CoffeeShopW\bin\Debug\CoffeeShopW.pdb
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.csprojAssemblyReference.cache
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.Loginpage.resources
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.Properties.Resources.resources
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.csproj.GenerateResource.cache
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.exe
+E:\source\repos\CoffeeShopW\CoffeeShopW\obj\Debug\CoffeeShopW.pdb

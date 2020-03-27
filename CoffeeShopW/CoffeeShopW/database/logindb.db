@@ -1,0 +1,7 @@
+﻿-- Script Date: 24/3/2563 22:19  - ErikEJ.SqlCeScripting version 3.5.2.86
+CREATE TABLE [Login] (
+  [AdminID] INTEGER NULL
+, [username] TEXT NOT NULL
+, [password] TEXT NOT NULL
+, CONSTRAINT [PK_Login] PRIMARY KEY ([AdminID])
+);

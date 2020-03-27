@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoffeeShop.Orderdetails">
+    <ContentPage.Content>
+        
+        <Grid BackgroundColor="#F6D2B7" >
+                <Grid.RowDefinitions>
+          
+                <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+
+            <Grid HorizontalOptions="Center" >
+                <Image Grid.Row="1" Source="M1" Margin="0,90,0,-120"/>
+            </Grid>
+
+            <StackLayout Grid.Row="4">
+                <Label Text="สั่งซื้อเรียบร้อยแล้ว"  HorizontalTextAlignment="Center" Margin="0,120,0,0" TextType="Text" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="5">
+                <Button Text="จ่ายเงิน" x:Name="buyybutton" BackgroundColor="#12F0D1" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                              FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="0,0,0,0" 
+                              Clicked="buyybutton_Clicked"/>
+                <Button Text="ยกเลิก" x:Name="exitt1" BackgroundColor="#F42727" AutomationProperties.IsInAccessibleTree="False" TextColor="#000000" FontSize="Large" 
+                                FlowDirection="MatchParent" FontAttributes="Bold" InputTransparent="False" Margin="20" HorizontalOptions="End"  />
+                </StackLayout>
+          </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
